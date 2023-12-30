@@ -62,10 +62,13 @@ Using Java equals method to check equality of 2 Lengths is preferable.*/
         //Check the equality of Two lines
         if(Objects.equals(distanceOfLineOne, distanceOfLineTwo)) {
             System.out.println("Length of Line1 and Line2 is Equal");
-        } else
+        } else if (distanceOfLineTwo>distanceOfLineOne)
         {
-            System.out.println("Length of Line1 and Line2 is unequal");
-
+            System.out.println("Length of Line2 is greater");
+        }
+        else
+        {
+            System.out.println("Length of Line1 is greater");
         }
     }
 }
